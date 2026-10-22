@@ -52,7 +52,7 @@ STRICT_LOCAL_BUILD_BIN = Path(
 ).expanduser()
 VEX_RELEASE_API = os.environ.get(
     "VEX_RELEASE_API",
-    "https://api.github.com/repos/imnotnoahhh/vex/releases/latest",
+    "https://api.github.com/repos/noah-qin/vex/releases/latest",
 )
 FRESH_RUN = os.environ.get("VEX_TEST_REUSE", "").lower() not in {"1", "true", "yes"}
 STRICT_TMP_ROOT = os.environ.get("VEX_STRICT_TMP_ROOT", "").strip()

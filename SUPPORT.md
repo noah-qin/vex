@@ -15,7 +15,7 @@ vex globals --verbose
 
 ## Reporting Bugs
 
-Open a bug report at [GitHub Issues](https://github.com/imnotnoahhh/vex/issues/new/choose) and include:
+Open a bug report at [GitHub Issues](https://github.com/noah-qin/vex/issues/new/choose) and include:
 
 - `vex --version`
 - macOS version and CPU architecture

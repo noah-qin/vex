@@ -13,9 +13,9 @@ trap cleanup EXIT
 
 bash scripts/render-homebrew-formula.sh \
   "1.2.0" \
-  "https://github.com/imnotnoahhh/vex/releases/download/v1.2.0/vex-aarch64-apple-darwin.tar.gz" \
+  "https://github.com/noah-qin/vex/releases/download/v1.2.0/vex-aarch64-apple-darwin.tar.gz" \
   "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" \
-  "https://github.com/imnotnoahhh/vex/releases/download/v1.2.0/vex-x86_64-apple-darwin.tar.gz" \
+  "https://github.com/noah-qin/vex/releases/download/v1.2.0/vex-x86_64-apple-darwin.tar.gz" \
   "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb" \
   "$tmp_formula"
 

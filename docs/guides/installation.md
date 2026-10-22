@@ -19,7 +19,7 @@ This guide covers all methods of installing vex on macOS.
 The quickest way to install vex:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/imnotnoahhh/vex/main/scripts/install-release.sh | bash
+curl -fsSL https://raw.githubusercontent.com/noah-qin/vex/main/scripts/install-release.sh | bash
 ```
 
 This script will:
@@ -31,7 +31,7 @@ This script will:
 #### Install Specific Version
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/imnotnoahhh/vex/main/scripts/install-release.sh | bash -s -- --version v1.7.0
+curl -fsSL https://raw.githubusercontent.com/noah-qin/vex/main/scripts/install-release.sh | bash -s -- --version v1.7.0
 ```
 
 #### Audit the Script First
@@ -39,14 +39,14 @@ curl -fsSL https://raw.githubusercontent.com/imnotnoahhh/vex/main/scripts/instal
 For security, you can review the script before running:
 
 ```bash
-curl -fsSL -o install-release.sh https://raw.githubusercontent.com/imnotnoahhh/vex/main/scripts/install-release.sh
+curl -fsSL -o install-release.sh https://raw.githubusercontent.com/noah-qin/vex/main/scripts/install-release.sh
 less install-release.sh
 bash install-release.sh
 ```
 
 ### Method 2: Manual Download from GitHub Releases
 
-1. Go to the [Releases page](https://github.com/imnotnoahhh/vex/releases)
+1. Go to the [Releases page](https://github.com/noah-qin/vex/releases)
 
 2. Download the appropriate binary for your Mac:
    - **Apple Silicon** (M1/M2/M3): `vex-aarch64-apple-darwin.tar.gz`
@@ -83,7 +83,7 @@ bash install-release.sh
 If you already use Homebrew, vex also provides an official tap:
 
 ```bash
-brew install imnotnoahhh/homebrew-vex/vex
+brew install noah-qin/homebrew-vex/vex
 ```
 
 This is optional. Direct installation remains the recommended path because vex is designed to work cleanly without requiring Homebrew.
@@ -94,7 +94,7 @@ If you have Rust installed:
 
 ```bash
 # Clone the repository
-git clone https://github.com/imnotnoahhh/vex.git
+git clone https://github.com/noah-qin/vex.git
 cd vex
 
 # Build release binary
@@ -119,7 +119,7 @@ source ~/.zshrc
 For CI, this repository now ships a macOS-only composite action:
 
 ```yaml
-- uses: imnotnoahhh/vex@v1
+- uses: noah-qin/vex@v1
   with:
     tools: node@20 go@1.24
 ```
@@ -127,7 +127,7 @@ For CI, this repository now ships a macOS-only composite action:
 Or let vex read the current repository version files:
 
 ```yaml
-- uses: imnotnoahhh/vex@v1
+- uses: noah-qin/vex@v1
   with:
     auto-install: true
 ```
@@ -412,7 +412,7 @@ To update to the latest version:
 ### Using the Installer
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/imnotnoahhh/vex/main/scripts/install-release.sh | bash
+curl -fsSL https://raw.githubusercontent.com/noah-qin/vex/main/scripts/install-release.sh | bash
 ```
 
 The installer will overwrite the existing binary.
@@ -501,7 +501,7 @@ If you encounter issues during installation:
 
 1. Run `vex doctor` to diagnose problems
 2. Check the [Troubleshooting Guide](troubleshooting.md)
-3. Search [GitHub Issues](https://github.com/imnotnoahhh/vex/issues)
+3. Search [GitHub Issues](https://github.com/noah-qin/vex/issues)
 4. File a new issue with:
    - Your macOS version
    - Your Mac architecture (Apple Silicon or Intel)

@@ -4,6 +4,10 @@
   <a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a>
 </p>
 
+> [!WARNING]
+> **vex 已归档，不再维护。** v1.7.0 是最后一个版本，之后不会再有安全或兼容性修复。
+> 如需仍在积极维护的多语言版本管理器，请使用 [mise](https://github.com/jdx/mise)。代码仍以 MIT 许可证保留。
+
 <p align="center">
   <strong>面向 macOS 的高速多语言版本管理器</strong>
 </p>
@@ -13,14 +17,14 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/imnotnoahhh/vex/actions/workflows/ci.yml">
-    <img src="https://img.shields.io/github/actions/workflow/status/imnotnoahhh/vex/ci.yml?style=flat-square&label=CI" alt="CI">
+  <a href="https://github.com/noah-qin/vex/actions/workflows/ci.yml">
+    <img src="https://img.shields.io/github/actions/workflow/status/noah-qin/vex/ci.yml?style=flat-square&label=CI" alt="CI">
   </a>
-  <a href="https://github.com/imnotnoahhh/vex/releases">
-    <img src="https://img.shields.io/github/v/release/imnotnoahhh/vex?style=flat-square" alt="Release">
+  <a href="https://github.com/noah-qin/vex/releases">
+    <img src="https://img.shields.io/github/v/release/noah-qin/vex?style=flat-square" alt="Release">
   </a>
-  <a href="https://github.com/imnotnoahhh/vex/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/imnotnoahhh/vex?style=flat-square" alt="License">
+  <a href="https://github.com/noah-qin/vex/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/noah-qin/vex?style=flat-square" alt="License">
   </a>
 </p>
 
@@ -72,22 +76,22 @@ vex 是一个 macOS 原生的多语言版本管理器。它用直接符号链接
 
 ```bash
 # 最新版本
-curl -fsSL https://raw.githubusercontent.com/imnotnoahhh/vex/main/scripts/install-release.sh | bash
+curl -fsSL https://raw.githubusercontent.com/noah-qin/vex/main/scripts/install-release.sh | bash
 
 # 指定版本
-curl -fsSL https://raw.githubusercontent.com/imnotnoahhh/vex/main/scripts/install-release.sh | bash -s -- --version v1.7.0
+curl -fsSL https://raw.githubusercontent.com/noah-qin/vex/main/scripts/install-release.sh | bash -s -- --version v1.7.0
 ```
 
 如果你已经使用 Homebrew，也可以使用官方 tap：
 
 ```bash
-brew install imnotnoahhh/homebrew-vex/vex
+brew install noah-qin/homebrew-vex/vex
 ```
 
 从源码构建：
 
 ```bash
-git clone https://github.com/imnotnoahhh/vex.git
+git clone https://github.com/noah-qin/vex.git
 cd vex
 cargo build --release
 cp target/release/vex ~/.local/bin/vex
@@ -226,7 +230,7 @@ vex uninit --shell auto
 仓库根目录提供 macOS-only composite action：
 
 ```yaml
-- uses: imnotnoahhh/vex@v1
+- uses: noah-qin/vex@v1
   with:
     tools: node@20 go@1.24 python@3.14
 ```
@@ -234,7 +238,7 @@ vex uninit --shell auto
 或者根据项目文件自动安装：
 
 ```yaml
-- uses: imnotnoahhh/vex@v1
+- uses: noah-qin/vex@v1
   with:
     auto-install: true
 ```
@@ -253,7 +257,7 @@ vex uninit --shell auto
 ## 开发
 
 ```bash
-git clone https://github.com/imnotnoahhh/vex.git
+git clone https://github.com/noah-qin/vex.git
 cd vex
 cargo build
 cargo test

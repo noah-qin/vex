@@ -184,7 +184,7 @@ repo/
 For GitHub Actions on macOS, prefer the official action:
 
 ```yaml
-- uses: imnotnoahhh/vex@v1
+- uses: noah-qin/vex@v1
   with:
     auto-install: true
 ```
@@ -192,7 +192,7 @@ For GitHub Actions on macOS, prefer the official action:
 Or request exact tools:
 
 ```yaml
-- uses: imnotnoahhh/vex@v1
+- uses: noah-qin/vex@v1
   with:
     tools: node@20.11.0 go@1.24.0
 ```
@@ -246,7 +246,7 @@ vex rust component add rust-src
 Example:
 
 ```yaml
-- uses: imnotnoahhh/vex@v1
+- uses: noah-qin/vex@v1
   with:
     version: latest
 

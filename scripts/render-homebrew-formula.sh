@@ -18,7 +18,7 @@ mkdir -p "$(dirname "$output_path")"
 cat >"$output_path" <<EOF
 class Vex < Formula
   desc "A fast, multi-language version manager for macOS"
-  homepage "https://github.com/imnotnoahhh/vex"
+  homepage "https://github.com/noah-qin/vex"
   version "$version"
   license "MIT"
 

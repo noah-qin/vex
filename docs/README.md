@@ -97,7 +97,7 @@ Recent user-facing additions that should stay in sync across these docs:
 - `vex relink node` for rebuilding active Node toolchain binary links without reinstalling or switching versions
 - full CLI reference coverage in `command-reference.md`
 - safe remote team config sources via `vex install --from` / `vex sync --from`
-- the macOS-only `imnotnoahhh/vex` GitHub Action and cache behavior
+- the macOS-only `noah-qin/vex` GitHub Action and cache behavior
 - failure recovery expectations for install and switch workflows
 
 See [CONTRIBUTING.md](../CONTRIBUTING.md) for guidelines.
@@ -165,8 +165,8 @@ vex install node@20
 ## Getting Help
 
 - **Documentation**: Check the guides in this directory
-- **Issues**: Search [GitHub Issues](https://github.com/imnotnoahhh/vex/issues)
-- **Discussions**: Ask questions in [GitHub Discussions](https://github.com/imnotnoahhh/vex/discussions)
+- **Issues**: Search [GitHub Issues](https://github.com/noah-qin/vex/issues)
+- **Discussions**: Ask questions in [GitHub Discussions](https://github.com/noah-qin/vex/discussions)
 - **Bug Reports**: File an issue with reproduction steps
 
 ## License

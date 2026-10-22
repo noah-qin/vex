@@ -4,6 +4,10 @@
   <a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a>
 </p>
 
+> [!WARNING]
+> **vex is archived and no longer maintained.** v1.7.0 is the final release and will not receive security or compatibility fixes.
+> For an actively maintained multi-language version manager, use [mise](https://github.com/jdx/mise). The code stays available under the MIT license.
+
 <p align="center">
   <strong>A fast, multi-language version manager for macOS</strong>
 </p>
@@ -13,17 +17,17 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/imnotnoahhh/vex/actions/workflows/ci.yml">
-    <img src="https://img.shields.io/github/actions/workflow/status/imnotnoahhh/vex/ci.yml?style=flat-square&label=CI" alt="CI">
+  <a href="https://github.com/noah-qin/vex/actions/workflows/ci.yml">
+    <img src="https://img.shields.io/github/actions/workflow/status/noah-qin/vex/ci.yml?style=flat-square&label=CI" alt="CI">
   </a>
-  <a href="https://github.com/imnotnoahhh/vex/releases">
-    <img src="https://img.shields.io/github/v/release/imnotnoahhh/vex?style=flat-square" alt="Release">
+  <a href="https://github.com/noah-qin/vex/releases">
+    <img src="https://img.shields.io/github/v/release/noah-qin/vex?style=flat-square" alt="Release">
   </a>
-  <a href="https://github.com/imnotnoahhh/vex/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/imnotnoahhh/vex?style=flat-square" alt="License">
+  <a href="https://github.com/noah-qin/vex/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/noah-qin/vex?style=flat-square" alt="License">
   </a>
-  <a href="https://github.com/imnotnoahhh/vex/stargazers">
-    <img src="https://img.shields.io/github/stars/imnotnoahhh/vex?style=flat-square" alt="Stars">
+  <a href="https://github.com/noah-qin/vex/stargazers">
+    <img src="https://img.shields.io/github/stars/noah-qin/vex?style=flat-square" alt="Stars">
   </a>
 </p>
 
@@ -68,7 +72,7 @@
 - **Explicit relink for Node toolchain bins** — `vex relink node` rebuilds `~/.vex/bin` when executables appear inside the active Node toolchain
 - **Transient execution** — `vex exec -- <command>` runs tools in the resolved vex environment without changing global symlinks
 - **Project task runner** — `.vex.toml` can define project env vars and named commands for `vex run <task>`
-- **Official GitHub Action** — `uses: imnotnoahhh/vex@v1` installs `vex` plus cached toolchains and shared npm globals on macOS GitHub Actions runners
+- **Official GitHub Action** — `uses: noah-qin/vex@v1` installs `vex` plus cached toolchains and shared npm globals on macOS GitHub Actions runners
 - **`.tool-versions` support** — per-project pinning, auto-switch on `cd`, batch install
 - **Project configuration** — `.vex.toml` adds project-local commands, env vars, behavior overrides, and optional network/mirror overrides
 - **Smart version filtering** — `vex list-remote node --filter lts` shows only LTS versions
@@ -97,23 +101,23 @@ Automatically downloads the correct prebuilt binary for your macOS architecture 
 
 ```bash
 # Latest release
-curl -fsSL https://raw.githubusercontent.com/imnotnoahhh/vex/main/scripts/install-release.sh | bash
+curl -fsSL https://raw.githubusercontent.com/noah-qin/vex/main/scripts/install-release.sh | bash
 
 # Specific tag
-curl -fsSL https://raw.githubusercontent.com/imnotnoahhh/vex/main/scripts/install-release.sh | bash -s -- --version v1.7.0
+curl -fsSL https://raw.githubusercontent.com/noah-qin/vex/main/scripts/install-release.sh | bash -s -- --version v1.7.0
 ```
 
 For auditability, review the script before running:
 
 ```bash
-curl -fsSL -o install-release.sh https://raw.githubusercontent.com/imnotnoahhh/vex/main/scripts/install-release.sh
+curl -fsSL -o install-release.sh https://raw.githubusercontent.com/noah-qin/vex/main/scripts/install-release.sh
 less install-release.sh
 bash install-release.sh --help
 ```
 
 #### Manual download from GitHub Releases
 
-Download the prebuilt binary for your architecture from the [Releases page](https://github.com/imnotnoahhh/vex/releases):
+Download the prebuilt binary for your architecture from the [Releases page](https://github.com/noah-qin/vex/releases):
 
 - Apple Silicon (M1/M2/M3): `vex-aarch64-apple-darwin.tar.gz`
 - Intel: `vex-x86_64-apple-darwin.tar.gz`
@@ -136,7 +140,7 @@ source ~/.zshrc
 If you already use Homebrew, vex can also be installed from the official tap:
 
 ```bash
-brew install imnotnoahhh/homebrew-vex/vex
+brew install noah-qin/homebrew-vex/vex
 ```
 
 Direct installation remains the recommended path because it keeps vex completely independent from Homebrew after setup.
@@ -144,7 +148,7 @@ Direct installation remains the recommended path because it keeps vex completely
 #### Build from source
 
 ```bash
-git clone https://github.com/imnotnoahhh/vex.git
+git clone https://github.com/noah-qin/vex.git
 cd vex
 cargo build --release && cp target/release/vex ~/.local/bin/vex
 ```
@@ -437,7 +441,7 @@ Rules:
 This repository now publishes a macOS-only composite action:
 
 ```yaml
-- uses: imnotnoahhh/vex@v1
+- uses: noah-qin/vex@v1
   with:
     tools: node@20 go@1.24
 ```
@@ -445,7 +449,7 @@ This repository now publishes a macOS-only composite action:
 Or:
 
 ```yaml
-- uses: imnotnoahhh/vex@v1
+- uses: noah-qin/vex@v1
   with:
     auto-install: true
 ```
@@ -693,7 +697,7 @@ rm -f ~/.local/bin/vex
 ## Development
 
 ```bash
-git clone https://github.com/imnotnoahhh/vex.git
+git clone https://github.com/noah-qin/vex.git
 cd vex
 cargo build
 cargo test
@@ -779,14 +783,14 @@ For usage help, bug reports, and feature requests, see [SUPPORT.md](SUPPORT.md).
 - **Version pinning strategies**: Lock files for reproducible builds
 - **Integration with CI/CD**: GitHub Actions, GitLab CI support
 
-See [GitHub Issues](https://github.com/imnotnoahhh/vex/issues) for detailed feature requests and discussions.
+See [GitHub Issues](https://github.com/noah-qin/vex/issues) for detailed feature requests and discussions.
 
 ## Contributors
 
 Thanks to everyone who has contributed to vex!
 
 <!-- ALL-CONTRIBUTORS-LIST:START -->
-- [Noah Qin](https://github.com/imnotnoahhh) - Creator and maintainer
+- [Noah Qin](https://github.com/noah-qin) - Creator and maintainer
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 Want to contribute? Check out [CONTRIBUTING.md](CONTRIBUTING.md) to get started!

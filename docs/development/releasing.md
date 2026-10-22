@@ -182,7 +182,7 @@ GitHub Actions will automatically:
 
 **Manual steps** (if needed):
 
-1. Go to https://github.com/imnotnoahhh/vex/releases
+1. Go to https://github.com/noah-qin/vex/releases
 2. Click "Draft a new release"
 3. Choose tag: `vX.Y.Z`
 4. Release title: `vX.Y.Z`
@@ -198,7 +198,7 @@ GitHub Actions will automatically:
 - [ ] Download and test binaries
   ```bash
   # Download
-  curl -LO https://github.com/imnotnoahhh/vex/releases/download/vX.Y.Z/vex-aarch64-apple-darwin.tar.gz
+  curl -LO https://github.com/noah-qin/vex/releases/download/vX.Y.Z/vex-aarch64-apple-darwin.tar.gz
 
   # Extract
   tar -xzf vex-aarch64-apple-darwin.tar.gz
@@ -209,7 +209,7 @@ GitHub Actions will automatically:
 
 - [ ] Test installation script
   ```bash
-  curl -fsSL https://raw.githubusercontent.com/imnotnoahhh/vex/main/scripts/install-release.sh | bash -s -- --version vX.Y.Z
+  curl -fsSL https://raw.githubusercontent.com/noah-qin/vex/main/scripts/install-release.sh | bash -s -- --version vX.Y.Z
   ```
 
 ## CI/CD Pipeline
@@ -268,7 +268,7 @@ jobs:
 
 The optional tap repository is:
 
-- `imnotnoahhh/homebrew-vex`
+- `noah-qin/homebrew-vex`
 
 To enable automatic formula updates, configure this repository secret in `vex`:
 
