@@ -59,7 +59,7 @@ echo $PATH | grep -q "$HOME/.local/bin" && echo "✓ In PATH" || echo "✗ Not i
 
 3. **Reinstall if needed**:
    ```bash
-   curl -fsSL https://raw.githubusercontent.com/imnotnoahhh/vex/main/scripts/install-release.sh | bash
+   curl -fsSL https://raw.githubusercontent.com/noah-qin/vex/main/scripts/install-release.sh | bash
    ```
 
 #### Permission denied
@@ -407,7 +407,7 @@ Notes:
 
 #### GitHub Action cache restored but tools are missing from PATH
 
-**Symptoms**: The `imnotnoahhh/vex` GitHub Action reports a cache hit, but `node`, `go`, or `python` still cannot be found later in the workflow.
+**Symptoms**: The `noah-qin/vex` GitHub Action reports a cache hit, but `node`, `go`, or `python` still cannot be found later in the workflow.
 
 **Resolution**:
 
@@ -720,7 +720,7 @@ file ~/.local/bin/vex
 # Should show: Mach-O 64-bit executable
 
 # Reinstall if corrupted
-curl -fsSL https://raw.githubusercontent.com/imnotnoahhh/vex/main/scripts/install-release.sh | bash
+curl -fsSL https://raw.githubusercontent.com/noah-qin/vex/main/scripts/install-release.sh | bash
 ```
 
 ### Clean slate reinstall
@@ -739,7 +739,7 @@ rm -f ~/.local/bin/vex
 exec $SHELL
 
 # 4. Reinstall vex
-curl -fsSL https://raw.githubusercontent.com/imnotnoahhh/vex/main/scripts/install-release.sh | bash
+curl -fsSL https://raw.githubusercontent.com/noah-qin/vex/main/scripts/install-release.sh | bash
 
 # 5. Initialize
 vex init
@@ -810,7 +810,7 @@ If you can't resolve the issue:
    ```
 
 2. **Check existing issues**:
-   - Search [GitHub Issues](https://github.com/imnotnoahhh/vex/issues)
+   - Search [GitHub Issues](https://github.com/noah-qin/vex/issues)
 
 3. **File a new issue** with:
    - Output of `vex doctor`

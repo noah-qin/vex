@@ -14,9 +14,9 @@ updates:
       prefix: "chore"
       include: "scope"
     reviewers:
-      - imnotnoahhh
+      - noah-qin
     assignees:
-      - imnotnoahhh
+      - noah-qin
   - package-ecosystem: github-actions
     directory: /
     schedule:
@@ -31,9 +31,9 @@ updates:
       prefix: "ci"
       include: "scope"
     reviewers:
-      - imnotnoahhh
+      - noah-qin
     assignees:
-      - imnotnoahhh
+      - noah-qin
     ignore:
       # These versions are managed by cargo-dist
       - dependency-name: "actions/download-artifact"

@@ -2,7 +2,7 @@ use crate::error::{Result, VexError};
 use crate::http;
 use serde::Deserialize;
 
-const GITHUB_API_LATEST: &str = "https://api.github.com/repos/imnotnoahhh/vex/releases/latest";
+const GITHUB_API_LATEST: &str = "https://api.github.com/repos/noah-qin/vex/releases/latest";
 
 #[derive(Deserialize)]
 pub(in crate::updater) struct GithubRelease {

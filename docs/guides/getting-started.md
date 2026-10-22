@@ -19,7 +19,7 @@ vex is a fast, multi-language version manager for macOS that lets you:
 The easiest way to install vex is with the one-line installer:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/imnotnoahhh/vex/main/scripts/install-release.sh | bash
+curl -fsSL https://raw.githubusercontent.com/noah-qin/vex/main/scripts/install-release.sh | bash
 ```
 
 This will:
@@ -416,6 +416,6 @@ This writes to `~/.vex/tool-versions` (not `~/.tool-versions`), keeping all vex 
 - Run `vex --help` for command help
 - Run `vex <command> --help` for command-specific help
 - Check the [Troubleshooting Guide](troubleshooting.md)
-- File an issue on [GitHub](https://github.com/imnotnoahhh/vex/issues)
+- File an issue on [GitHub](https://github.com/noah-qin/vex/issues)
 
 Happy version managing! 🚀

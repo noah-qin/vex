@@ -199,7 +199,7 @@ jobs:
         run: |
           set -euo pipefail
           tap_dir="$RUNNER_TEMP/homebrew-vex"
-          git clone "https://x-access-token:${HOMEBREW_TAP_TOKEN}@github.com/imnotnoahhh/homebrew-vex.git" "$tap_dir"
+          git clone "https://x-access-token:${HOMEBREW_TAP_TOKEN}@github.com/noah-qin/homebrew-vex.git" "$tap_dir"
           mkdir -p "$tap_dir/Formula"
           cp "$RUNNER_TEMP/vex.rb" "$tap_dir/Formula/vex.rb"
 

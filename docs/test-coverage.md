@@ -7,7 +7,7 @@
 - `vex init --template` / `--list-templates` / `--add-only`
 - 安全 team config 来源解析（本地文件、HTTPS、Git）
 - 安装失败后的清理与切换失败后的回滚
-- 仓库内 `imnotnoahhh/vex` GitHub Action 所依赖的脚本和 CI smoke path
+- 仓库内 `noah-qin/vex` GitHub Action 所依赖的脚本和 CI smoke path
 - `vex repair migrate-home`、captured user-state 导出、以及 Rust 官方 targets/components live smoke
 - PR CI 中的 `cargo audit` 与 `cargo deny`，其中 `deny.toml` 固定 license、advisory、ban、source 策略
 

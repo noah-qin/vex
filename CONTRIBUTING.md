@@ -9,7 +9,7 @@ Thank you for your interest in vex. We welcome issues and pull requests from the
 - macOS (Apple Silicon or Intel)
 
 ```bash
-git clone https://github.com/imnotnoahhh/vex.git
+git clone https://github.com/noah-qin/vex.git
 cd vex
 cargo build
 ```
