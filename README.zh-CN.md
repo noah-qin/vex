@@ -4,6 +4,10 @@
   <a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a>
 </p>
 
+> [!WARNING]
+> **vex 已归档，不再维护。** v1.7.0 是最后一个版本，之后不会再有安全或兼容性修复。
+> 如需仍在积极维护的多语言版本管理器，请使用 [mise](https://github.com/jdx/mise)。代码仍以 MIT 许可证保留。
+
 <p align="center">
   <strong>面向 macOS 的高速多语言版本管理器</strong>
 </p>
